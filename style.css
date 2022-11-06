@@ -26,7 +26,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 main {
-    width: 1120px;
+    /*width: 1120px;*/
 }
 
 /*HEADER*/
@@ -40,11 +40,19 @@ header {
     position: fixed;
     top: 0;
     z-index: 999;
-    background-color: #fcfbff;
     box-shadow: 0 1px 0 #ececec;
-    max-width: 1120px;
+    /*max-width: 1120px;*/
     width: 100%;
+    background-color: rgb(154, 148, 148);
+    color: rgb(159, 158, 158);
+    
 }
+
+ .menu a:hover {
+    box-shadow: 0 1px 0 #ececec;
+    background-color: rgb(154, 148, 148);
+    color:#fcbffc;
+    }
 
 nav.list {
     display: flex;
@@ -54,7 +62,14 @@ nav.list {
 a {
     cursor: pointer;
     text-decoration: none;
-    color: black;
+    color: white;
+    padding: 10px;
+}
+
+.logo img {
+    height: 80px;
+    width: auto;
+    border-radius: 50%;
 }
 
 /*APRESENTAÇAO*/
@@ -72,6 +87,7 @@ section#apresentaçao {
     flex-direction: column;
     gap: 15px;
     text-align: justify;
+    margin-left: 300px;
 }
 
 .apresentaçao-pessoa button {
@@ -84,26 +100,64 @@ section#apresentaçao {
     cursor: pointer;
     opacity: 0,9;
     border-radius: 5px;
+    margin-left: 20px;
 }
 
 .apresentaçao-pessoa button a {
     color:white;
 }
 
-.apresentaçao-img {
+.apresentacao-img img {
     width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 500px;
+    height: 500px;
+    animation: float 5s ease-in-out infinite;
+   /* box-shadow: 0 10px 10px;*/
+    margin-right: 3px;
+}
+
+/*FORMAÇAO*/
+.faculdade {
+    background-color: rgb(190, 153, 153);
+    padding: 10px;
+    margin: auto;
+}
+
+.formacao {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.apresentaçao-imag imag {
-    width: 200px;
-    height: 200px;
-    animation: float 5s ease-in-out infinite;
-    box-shadow: 0 10px 10px;
-    border-radius: 50%;
+.pratica {
+    background-color: #ececec;
+    padding: 10px;
+    margin: auto;
 }
+
+.experiencia {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+    
+
+
+
+
+    
+    
+    
 
 @keyframes float {
     0%, 100% {
@@ -114,9 +168,6 @@ section#apresentaçao {
     }
 }
 
-
-
-   
 
 /*CONTATO*/
 
@@ -173,6 +224,7 @@ footer {
 @media (max-width:450px) {
     header{
         justify-content: center;
+        flex-direction: column;
     }
     .logo {
         display: none;
@@ -185,7 +237,6 @@ footer {
     .apresentaçao-sintise, .apresentaçao-img {
         width: 100%;
         padding: 10px;
-
     }
 }
 
