@@ -6,11 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script feder src="validacao.js"></script>
+    <script feder src="script.js"></script>
     <title>Dossiê</title>
 </head>
 
 <body>
+
+
+    <script src="formulario.js"></script>
     <main>
         <!--HEADER-->
         <header>
@@ -125,16 +128,17 @@
 
         <!--CONTATO-->
 
-        <section id="contact">
+        <section id="contato">
             <h2 class="cont">CONTATO</h2>
-            <form action="https://formsubmit.co/el/repiha" data-form>
+            <form class="form">
                 <label for="nome">Nome</label>
-                <input type="text" name="nome" id="nome" required />
-                <label for="email">E-mail</label>
-                <input type="text" name="email" id="email" required />
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome" />
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Digite seu email" />
                 <label for="mensagem">Mensagem</label>
-                <textarea name="mensagem" id="mensagem" required></textarea>
-                <button type="submit" data-button>Enviar</button>
+                <textarea cols="30" rows="10" id="menssage" name="mensagem" placeholder="Digite sua mensagem"></textarea>
+                <input id="button" type="submit" onclick="validar()" value="Enviar" class="button" />
+            </form>
             </form>
             </div>
         </section>

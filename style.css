@@ -241,39 +241,53 @@ section#apresentaçao {
 }
 
 /*CONTATO*/
-#contact {
+#contato {
     height: calc(100vh + 80px);
     width: 100%;
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
-    font-size: 20px;
-    margin: 5rem 0 5rem 0;
-}
-form {
-    width: 10;
-    max-width: 30rem;
+    gap: 20px;
+    font-size: 18px; 
+   
 }
 
-label, 
-input, 
-textarea,
- button {
-display: block;
+ #contato form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    max-width: 400px;
+    width: 100%;
+    padding: 5px 20px;
 }
+
 
 input,
 textarea,
 button {
-    width: 100%;
-    font: inherit;
-    padding: 1.25rem;
-    font-weight: 700;
+    box-shadow: 0 1px 2px #ddd;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    resize: none;
+}
+
+#button {
+    background-color: #4a5182;
+    color: #000;
+    font-size: 18px;
+    cursor: pointer;
+    opacity: 0, 9;
+}
+
+#contato form button:hover {
+    opacity: 1;
 }
 
 input, textarea {
-    margin-bottom: 1rem;
-    color: white;
+    color: black;
     background-color: #ffffff;
     border: 0.25rem solid transparent;
     border-radius: 5px;
@@ -281,13 +295,14 @@ input, textarea {
     box-shadow: 0.3s;
 }
 
+
 input:hover,
 input:focus,
 textarea:hover,
 textarea:focus {
     outline: none;
-    border-color: #1d90f5;
-    box-shadow: 0 0 0 0.3125rem #26344a;
+    border-color: #4f3f68;
+    box-shadow: 0 0 0 0.3125rem #625f53ac;
 }
 
 label {
@@ -300,37 +315,12 @@ textarea {
     resize: vertical;
 }
 
-button {
-    border: none;
-    border-radius: 5px;
-    color: white;
-    background-color: green;
-    cursor: pointer;
-    transition: 0.3s;
-}
+
 
 button:hover,
 button:focus {
     outline: none;
-    background-color: rgb(127, 148, 127);
-}
-
-button:disabled {
-    cursor: not-allowed;
-    background-color: #555b69;
-}
-
-.sucess,
-.error {
-    text-align: center;
-}
-
-.sucess {
-    color: greenyellow;
-}
-
-.error {
-    color: tomato;
+    background-color: rgb(135, 23, 23);
 }
 
 /*FOOTER*/
